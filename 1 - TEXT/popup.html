@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Text Analyzer Dashboard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Text Analyzer</h1>
+    <textarea id="inputText" placeholder="Type your text here..."></textarea>
+    <div id="buttons">
+      <button id="resetButton">Reset</button>
+    </div>
+    <div id="stats">
+      <div class="stat-card">
+        <h2>Words</h2>
+        <p id="wordCount">0</p>
+      </div>
+      <div class="stat-card">
+        <h2>Special Characters</h2>
+        <p id="specialCharCount">0</p>
+      </div>
+      <div class="stat-card">
+        <h2>Numbers</h2>
+        <p id="numberCount">0</p>
+      </div>
+    </div>
+    <div id="chart-container">
+      <canvas id="chart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <script src="chart.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

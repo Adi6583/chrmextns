@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#app {
+  width: 90%; /* 90% of the popup width */
+  max-width: 500px; /* Ensures a maximum width for smaller screens */
+  min-width: 300px; /* Set minimum width for the popup */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #3498db;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  margin-top: 0; /* Ensure there's no unnecessary margin */
+}
+
+/* Text Area */
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 2em;
+  margin-bottom: 20px;
+  resize: none;
+  background: #f8f8f8;
+}
+
+/* Buttons */
+#buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+  width: auto; /* Adjust width automatically */
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Stat Cards */
+#stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.stat-card p {
+  margin: 5px 0 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Chart Container */
+#chart-container {
+  margin-top: 20px;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #app {
+    width: 90%;
+  }
+
+  .stat-card {
+    width: 45%;
+  }
+
+  #buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .stat-card {
+    width: 100%;
+  }
+
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
