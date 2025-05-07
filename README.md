@@ -21,3 +21,4 @@ Chrome extensions are tiny programs that enhance the functionality of your Googl
 
 ## A Quick Look Back
 Chrome extensions made their debut in 2009, right after the launch of the Google Chrome browser. Google wanted to create a browser that could be easily customized, letting developers add new features. Since then, the number of extensions available has skyrocketed, with the Chrome Web Store becoming a hub for users looking to improve their browsing. Today, these small tools are a huge part of how we use the internet—whether for productivity, fun, or anything in between.
+
