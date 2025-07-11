@@ -1,6 +1,6 @@
 # Chrome Extensions: Benefits, Uses, and a Brief History 
 
-## What Are Chrome Extensions?  
+## What Are Chrome Extensions?   
 Chrome extensions are tiny programs that enhance the functionality of your Google Chrome browser. Built with technologies like HTML, CSS, and JavaScript, these extensions allow you to add new features or tweak how Chrome works, making your browsing experience more personalized and efficient.
 
 ## Why Are They Great?  
